@@ -11,7 +11,7 @@
 <head>
 
     <meta charset="utf-8">
-    <title>The Tour of Love</title>
+    <title>Chicago | The Tour of Love</title>
 
     <!-- Begin Meta Tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -48,7 +48,6 @@
         gtag('config', 'UA-148353627-1');
     </script>
 
-
 </head>
 <!-- End Head -->
 
@@ -64,77 +63,111 @@
     </div>
     <!-- End Loader -->
 
+    <!-- Begin Header -->
+    <header>
+
+        <a href="index.html" class="logo-container">
+            <p>The Tour of Love</p>
+        </a>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="proposal.html">
+                        PROPOSAL
+                    </a>
+                </li>
+                <li>
+                    <a href="atlanta.html">
+                        ATLANTA
+                    </a>
+                </li>
+                <li>
+                    <a href="chicago.html" class="active">
+                        CHICAGO
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="notavailable">
+                        KOLKATA
+                        <span class="tooltiptext">COMING SOON</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="notavailable">
+                        NEW HAVEN
+                        <span class="tooltiptext">COMING SOON</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <a href="#" class="mobile-navigation icon3-list2"></a>
+
+    </header>
+    <!-- End Header -->
+
+
     <!-- Begin Content -->
-    <div class="striped-pages">
+    <div class="main-container with-padding">
 
-        <!-- Begin Logo container -->
-        <span class="logo-container">
-            <h1>The Tour of Love</h1>
-        </span>
-        <!--End Logo container -->
+        <!-- Begin Wrapper -->
+        <div class="wrapper">
 
-        <!-- Begin Columns -->
-        <div class="cols cols-5">
+            <!-- Begin Inner Wrapper -->
+            <div class="inner-wrapper">
 
-            <div class="col" style="background-image:url(images/proposal/index.jpg);">
-                <a href="proposal.html">
-                    <div class="overlay"></div>
-                    <h4>
-                        <span class="title" href="proposal.html">
-                            <span>PROPOSAL</span>
-                        </span>
-                    </h4>
-                </a>
+                <!-- Begin Gallery -->
+                <div class="gallery-images masonry style-icons high-space">
+
+                    <div class="row">
+
+                        <div class="col full">
+
+                            <div class="filters clearfix" data-style="scale">
+
+                                <p>FILTERS</p>
+                                <a href="#" data-filter="*" class="active">ALL</a>
+                                <a href="#" data-filter=".filter-cityhall">CITY HALL</a>
+                                <a href="#" data-filter=".filter-piday">PI DAY PARTY</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="images clearfix cols-4" id="image-container-template">
+
+                        <!-- CITY HALL -->
+                        {{#each cityHallImages}}
+                        <div class="img filter-cityhall size-regular">
+                            <div class="img-cont">
+                                <a href="images/chicago/cityHall/{{filename}}" class="preview-3" rel="gallery">
+                                    <img class="lazy" data-original="images/chicago/cityHall/{{filename}}" alt=""
+                                        data-width="{{width}}" data-height="{{height}}">
+                                </a>
+                            </div>
+                        </div>
+                        {{/each}}
+
+                    </div>
+
+                </div>
+                <!-- End Gallery -->
+
             </div>
-
-            <div class="col" style="background-image:url(images/atlanta/index.jpg);">
-                <a href="atlanta.html">
-                    <div class="overlay"></div>
-                    <h4>
-                        <span class="title" href="atlanta.html">
-                            <span>ATLANTA</span>
-                        </span>
-                    </h4>
-                </a>
-            </div>
-
-            <div class="col" style="background-image:url(images/chicago/index.jpg);">
-                <a href="chicago.html">
-                    <div class="overlay"></div>
-                    <h4>
-                        <span class="title">
-                            <span>CHICAGO</span>
-                        </span>
-                    </h4>
-                </a>
-            </div>
-
-            <div class="col" style="background-image:url(images/kolkata/index.jpg);">
-                <div class="overlay coming-soon"></div>
-                <h4>
-                    <span class="title">
-                        <span>KOLKATA</span>
-                    </span>
-                </h4>
-                <h6><span class="subtitle"><span>COMING SOON</span></span></h6>
-            </div>
-
-            <div class="col" style="background-image:url(images/new\ haven/index.jpg);">
-                <div class="overlay coming-soon"></div>
-                <h4>
-                    <span class="title">
-                        <span>NEW HAVEN</span>
-                    </span>
-                </h4>
-                <h6><span class="subtitle"><span>COMING SOON</span></span></h6>
-            </div>
+            <!-- End Inner Wrapper -->
 
         </div>
-        <!-- End Slides -->
+        <!-- End Wrapper -->
 
     </div>
     <!-- End Content -->
-
 
     <!-- Begin JavaScript -->
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
@@ -159,6 +192,18 @@
     <script type="text/javascript" src="js/mousewheel.min.js"></script>
     <script type="text/javascript" src="js/lazyload.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+    <script defer>
+        var cityHallImages = [];
+        var template = document.getElementById('image-container-template').innerHTML;
+        var renderImages = Handlebars.compile(template);
+
+        document.getElementById('image-container-template').innerHTML = renderImages({
+            cityHallImages: cityHallImages
+        });
+    </script>
     <!-- End JavaScript -->
 
 

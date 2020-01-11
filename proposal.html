@@ -1,0 +1,565 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<!-- Begin Head -->
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Proposal | The Tour of Love</title>
+
+    <!-- Begin Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="A Photography Template by CodeSymbol" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, Responsive, Photography" />
+    <meta name="author" content="CodeSymbol" />
+    <!-- End Meta Tags -->
+
+    <link rel="icon" href="images/favicon.ico" />
+
+    <!-- Begin Stylesheets -->
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="includes/entypo/style.css">
+    <link type="text/css" rel="stylesheet" href="includes/icomoon/style.css">
+    <link type="text/css" rel="stylesheet" href="includes/font_awesome/font-awesome.css">
+    <link type="text/css" rel="stylesheet" href="includes/cosy/style.css">
+    <link type="text/css" rel="stylesheet" href="js/jquery-ui/jquery-ui-1.10.3.custom.min.css">
+    <link type="text/css" rel="stylesheet" href="js/flexslider/style.css">
+    <link type="text/css" rel="stylesheet" href="js/Magnific-Popup/magnific-popup.css">
+    <link type="text/css" rel="stylesheet" href="js/mb.YTPlayer/css/YTPlayer.css">
+    <link type="text/css" rel="stylesheet" href="css/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="css/dark.css">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+    <!-- End Stylesheets -->
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-148353627-1');
+    </script>
+
+
+</head>
+<!-- End Head -->
+
+
+<!-- Begin Body -->
+
+<body>
+
+    <!-- Begin Loader -->
+    <div class="loader" data-background-color="#000000" data-text-color="#ffffff">
+        <p>LOADING</p>
+        <span class="circle"></span>
+    </div>
+    <!-- End Loader -->
+
+    <!-- Begin Header -->
+    <header>
+
+        <a href="index.html" class="logo-container">
+            <p>The Tour of Love</p>
+        </a>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="proposal.html" class="active">
+                        PROPOSAL
+                    </a>
+                </li>
+                <li>
+                    <a href="atlanta.html">
+                        ATLANTA
+                    </a>
+                </li>
+                <li>
+                    <a href="chicago.html">
+                        CHICAGO
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="notavailable">
+                        KOLKATA
+                        <span class="tooltiptext">COMING SOON</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="notavailable">
+                        NEW HAVEN
+                        <span class="tooltiptext">COMING SOON</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <a href="#" class="mobile-navigation icon3-list2"></a>
+
+    </header>
+    <!-- End Header -->
+
+
+    <!-- Begin Content -->
+    <div class="main-container with-padding">
+
+        <!-- Begin Wrapper -->
+        <div class="wrapper">
+
+            <!-- Begin Inner Wrapper -->
+            <div class="inner-wrapper">
+
+                <!-- Begin Gallery -->
+                <div class="gallery-images masonry style-icons high-space">
+                    <!--
+                    <div class="row">
+
+                        <div class="col full">
+
+                            <div class="filters clearfix">
+
+                                <p>FILTERS</p>
+                                <a href="#" data-filter="*" class="active">ALL</a>
+                                <a href="#" data-filter=".filter-indoors">INDOORS</a>
+                                <a href="#" data-filter=".filter-outdoors">OUTDOORS</a>
+                                <a href="#" data-filter=".filter-models">MODELS</a>
+                                <a href="#" data-filter=".filter-portraits">PORTRAITS</a>
+                                <a href="#" data-filter=".filter-fashion">FASHION</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    -->
+
+                    <div class="images clearfix cols-4" id="image-container-template">
+
+                        {{#each images}}
+                        <div class="img size-regular">
+                            <div class="img-cont">
+                                <a href="images/proposal/photosToDisplay/{{filename}}" class="preview-3" rel="gallery">
+                                    <img class="lazy" data-original="images/proposal/photosToDisplay/{{filename}}"
+                                        alt="" data-width="{{width}}" data-height="{{height}}">
+                                </a>
+                            </div>
+                        </div>
+                        {{/each}}
+
+                    </div>
+
+                </div>
+                <!-- End Gallery -->
+
+            </div>
+            <!-- End Inner Wrapper -->
+
+        </div>
+        <!-- End Wrapper -->
+
+    </div>
+    <!-- End Content -->
+
+    <!-- Begin JavaScript -->
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/modernizr-respond.js"></script>
+    <script type="text/javascript" src="js/cookie.js"></script>
+    <script type="text/javascript" src="js/retina.js"></script>
+    <script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/scrollTo-min.js"></script>
+    <script type="text/javascript" src="js/easing.1.3.js"></script>
+    <script type="text/javascript" src="js/appear.js"></script>
+    <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/jflickrfeed.min.js"></script>
+    <script type="text/javascript" src="js/flexslider/flexslider.min.js"></script>
+    <script type="text/javascript" src="js/isotope.min.js"></script>
+    <script type="text/javascript" src="js/queryloader2.min.js"></script>
+    <script type="text/javascript" src="js/gmap.min.js"></script>
+    <script type="text/javascript" src="js/nicescroll.min.js"></script>
+    <script type="text/javascript" src="js/fitvids.js"></script>
+    <script type="text/javascript" src="js/Magnific-Popup/magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/mb.YTPlayer/inc/mb.YTPlayer.js"></script>
+    <script type="text/javascript" src="js/mousewheel.min.js"></script>
+    <script type="text/javascript" src="js/lazyload.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+    <script defer>
+        var myImages = [{
+            'filename': '_06A6303.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6309.jpg',
+            'width': 1000,
+            'height': 1500
+        }, {
+            'filename': '_06A6315.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6315-2.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6320.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6323.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6345.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6349.jpg',
+            'width': 1000,
+            'height': 1500
+        }, {
+            'filename': '_06A6355.jpg',
+            'width': 1000,
+            'height': 1500
+        }, {
+            'filename': '_06A6372.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6376.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6377.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6380.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6382.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6384.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6385.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6388.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6390.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6406.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6413.jpg',
+            'width': 1000,
+            'height': 1500
+        }, {
+            'filename': '_06A6416.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6422.jpg',
+            'width': 1000,
+            'height': 1500
+        }, {
+            'filename': '_06A6424.jpg',
+            'width': 1000,
+            'height': 1500
+        }, {
+            'filename': '_06A6427.jpg',
+            'width': 1000,
+            'height': 1500
+        }, {
+            'filename': '_06A6428.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6443.jpg',
+            'width': 1000,
+            'height': 1500
+        }, {
+            'filename': '_06A6447.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6463.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6466.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6470.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6473.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6473-2.jpg',
+            'width': 1000,
+            'height': 1500
+        }, {
+            'filename': '_06A6474.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6474-2.jpg',
+            'width': 1000,
+            'height': 1500
+        }, {
+            'filename': '_06A6478.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6486.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6490.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6493.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6495.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6500.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6505.jpg',
+            'width': 1000,
+            'height': 1500
+        }, {
+            'filename': '_06A6512.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6513.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6518.jpg',
+            'width': 1000,
+            'height': 1500
+        }, {
+            'filename': '_06A6525.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6531.jpg',
+            'width': 1000,
+            'height': 1500
+        }, {
+            'filename': '_06A6534.jpg',
+            'width': 1000,
+            'height': 1500
+        }, {
+            'filename': '_06A6536.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6543.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6545.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6554.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6558.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6559.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6563.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6568.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6574.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6577.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6579.jpg',
+            'width': 1000,
+            'height': 1500
+        }, {
+            'filename': '_06A6584.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6591.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6592.jpg',
+            'width': 1000,
+            'height': 1500
+        }, {
+            'filename': '_06A6596.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6599.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6603.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6614.jpg',
+            'width': 1000,
+            'height': 1500
+        }, {
+            'filename': '_06A6616.jpg',
+            'width': 1000,
+            'height': 1500
+        }, {
+            'filename': '_06A6621.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6627.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6636.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6637.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6649.jpg',
+            'width': 1000,
+            'height': 1500
+        }, {
+            'filename': '_06A6652.jpg',
+            'width': 1000,
+            'height': 1500
+        }, {
+            'filename': '_06A6653.jpg',
+            'width': 1000,
+            'height': 1500
+        }, {
+            'filename': '_06A6657.jpg',
+            'width': 1000,
+            'height': 1500
+        }, {
+            'filename': '_06A6659.jpg',
+            'width': 1000,
+            'height': 1500
+        }, {
+            'filename': '_06A6666.jpg',
+            'width': 1000,
+            'height': 1500
+        }, {
+            'filename': '_06A6680.jpg',
+            'width': 1000,
+            'height': 1500
+        }, {
+            'filename': '_06A6682.jpg',
+            'width': 1000,
+            'height': 1500
+        }, {
+            'filename': '_06A6687.jpg',
+            'width': 1000,
+            'height': 1500
+        }, {
+            'filename': '_06A6691.jpg',
+            'width': 1000,
+            'height': 1500
+        }, {
+            'filename': '_06A6695.jpg',
+            'width': 1000,
+            'height': 1500
+        }, {
+            'filename': '_06A6697.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
+            'filename': '_06A6702.jpg',
+            'width': 1000,
+            'height': 1500
+        }, {
+            'filename': '_06A6706.jpg',
+            'width': 1000,
+            'height': 1500
+        }, {
+            'filename': '_06A6711.jpg',
+            'width': 1000,
+            'height': 1500
+        }, {
+            'filename': '_06A6716.jpg',
+            'width': 1000,
+            'height': 1500
+        }, {
+            'filename': '_06A6721.jpg',
+            'width': 1000,
+            'height': 667
+        }];
+        var template = document.getElementById('image-container-template').innerHTML;
+        var renderImages = Handlebars.compile(template);
+
+        document.getElementById('image-container-template').innerHTML = renderImages({
+            images: myImages
+        });
+    </script>
+    <!-- End JavaScript -->
+
+
+</body>
+<!-- End Body -->
+
+</html>
