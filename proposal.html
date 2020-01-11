@@ -149,7 +149,11 @@
                     <div class="images clearfix cols-4" id="image-container-template">
 
                         {{#each images}}
-                        <div class="img size-regular">
+                            {{#if highlight}}
+                                <div class="img size-wide">
+                            {{else}}
+                                <div class="img size-regular">
+                            {{/if}}
                             <div class="img-cont">
                                 <a href="images/proposal/photosToDisplay/{{filename}}" class="preview-3" rel="gallery">
                                     <img class="lazy" data-original="images/proposal/photosToDisplay/{{filename}}"
@@ -239,7 +243,8 @@
         }, {
             'filename': '000012.jpg',
             'width': 1000,
-            'height': 667
+            'height': 667,
+            'highlight': true
         }, {
             'filename': '000013.jpg',
             'width': 1000,
@@ -273,9 +278,14 @@
             'width': 1000,
             'height': 1500
         }, {
-            'filename': '000025.jpg',
+            'filename': '000028.jpg',
             'width': 1000,
             'height': 667
+        }, {
+            'filename': '000025.jpg',
+            'width': 1000,
+            'height': 667,
+            'highlight': true
         }, {
             'filename': '000026.jpg',
             'width': 1000,
@@ -283,11 +293,8 @@
         }, {
             'filename': '000027.jpg',
             'width': 1000,
-            'height': 667
-        }, {
-            'filename': '000028.jpg',
-            'width': 1000,
-            'height': 667
+            'height': 667,
+            'highlight': true
         }, {
             'filename': '000029.jpg',
             'width': 1000,
@@ -303,7 +310,8 @@
         }, {
             'filename': '000034.jpg',
             'width': 1000,
-            'height': 667
+            'height': 667,
+            'highlight': true,
         }, {
             'filename': '000035.jpg',
             'width': 1000,
@@ -329,6 +337,10 @@
             'width': 1000,
             'height': 667
         }, {
+            'filename': '000050.jpg',
+            'width': 1000,
+            'height': 667
+        }, {
             'filename': '000043.jpg',
             'width': 1000,
             'height': 667
@@ -339,7 +351,8 @@
         }, {
             'filename': '000045.jpg',
             'width': 1000,
-            'height': 667
+            'height': 667,
+            'highlight': true
         }, {
             'filename': '000046.jpg',
             'width': 1000,
@@ -357,19 +370,21 @@
             'width': 1000,
             'height': 667
         }, {
-            'filename': '000050.jpg',
+            'filename': '000068.jpg',
             'width': 1000,
             'height': 667
         }, {
             'filename': '000053.jpg',
             'width': 1000,
-            'height': 667
-        }, {
-            'filename': '000056.jpg',
-            'width': 1000,
-            'height': 667
+            'height': 667,
+            'highlight': true
         }, {
             'filename': '000057.jpg',
+            'width': 1000,
+            'height': 667,
+            'highlight': true
+        }, {
+            'filename': '000056.jpg',
             'width': 1000,
             'height': 667
         }, {
@@ -399,11 +414,8 @@
         }, {
             'filename': '000067.jpg',
             'width': 1000,
-            'height': 667
-        }, {
-            'filename': '000068.jpg',
-            'width': 1000,
-            'height': 667
+            'height': 667,
+            'highlight': true
         }, {
             'filename': '000069.jpg',
             'width': 1000,
@@ -411,7 +423,8 @@
         }, {
             'filename': '000070.jpg',
             'width': 1000,
-            'height': 667
+            'height': 667,
+            'highlight': true
         }, {
             'filename': '000071.jpg',
             'width': 1000,
@@ -451,7 +464,8 @@
         }, {
             'filename': '000087.jpg',
             'width': 1000,
-            'height': 667
+            'height': 667,
+            'highlight': true
         }];
         var template = document.getElementById('image-container-template').innerHTML;
         var renderImages = Handlebars.compile(template);
