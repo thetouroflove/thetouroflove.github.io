@@ -133,7 +133,9 @@
                                 <p>FILTERS</p>
                                 <a href="#" data-filter="*" class="active">ALL</a>
                                 <a href="#" data-filter=".filter-cityhall">CITY HALL</a>
-                                <a href="#" data-filter=".filter-piday">PI DAY PARTY</a>
+                                <a href="#" data-filter=".filter-piday" class="notavailable">PI DAY PARTY
+                                    <span class="tooltiptext">COMING SOON</span>
+                                </a>
 
                             </div>
 
@@ -196,7 +198,39 @@
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 
     <script defer>
-        var cityHallImages = [];
+        var cityHallImages = [{
+            'filename': 'IMG-6310.jpg',
+            'width': 3024,
+            'height': 4032
+        }, {
+            'filename': 'IMG-6317.jpg',
+            'width': 3024,
+            'height': 4032
+        }, {
+            'filename': 'IMG-6325.jpg',
+            'width': 3024,
+            'height': 4032
+        }, {
+            'filename': 'IMG-6328.jpg',
+            'width': 3024,
+            'height': 4032
+        }, {
+            'filename': 'IMG-6334.jpg',
+            'width': 3024,
+            'height': 4032
+        }, {
+            'filename': 'IMG-6341.jpg',
+            'width': 3024,
+            'height': 4032
+        }, {
+            'filename': 'IMG-6344.jpg',
+            'width': 3024,
+            'height': 4032
+        }, {
+            'filename': 'IMG-6346.jpg',
+            'width': 3024,
+            'height': 4032
+        }];
         var template = document.getElementById('image-container-template').innerHTML;
         var renderImages = Handlebars.compile(template);
 
