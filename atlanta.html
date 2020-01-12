@@ -146,7 +146,11 @@
 
                         <!-- MEHENDI CEREMONY -->
                         {{#each mehendiImages}}
-                        <div class="img filter-mehendi size-regular">
+                        {{#if highlight}}
+                                <div class="img filter-mehendi size-wide">
+                            {{else}}
+                                <div class="img filter-mehendi size-regular">
+                            {{/if}}
                             <div class="img-cont">
                                 <a href="images/atlanta/Mehendi/{{filename}}" class="preview-3" rel="gallery">
                                     <img class="lazy" data-original="images/atlanta/Mehendi/{{filename}}" alt=""
@@ -213,7 +217,8 @@
         }, {
             'filename': '7.jpg',
             'width': 1000,
-            'height': 667
+            'height': 667,
+            'highlight': true 
         }, {
             'filename': '8.jpg',
             'width': 1000,
@@ -221,7 +226,7 @@
         }, {
             'filename': '9.jpg',
             'width': 1000,
-            'height': 663
+            'height': 667
         }, {
             'filename': '10.jpg',
             'width': 1000,
@@ -241,19 +246,20 @@
         }, {
             'filename': '15.jpg',
             'width': 1000,
-            'height': 635
+            'height': 667,
+            'highlight': true 
         }, {
             'filename': '16.jpg',
             'width': 1000,
-            'height': 658
+            'height': 667
         }, {
             'filename': '17.jpg',
             'width': 1000,
-            'height': 639
+            'height': 667
         }, {
             'filename': '18.jpg',
             'width': 1000,
-            'height': 1523
+            'height': 1500
         }, {
             'filename': '19.jpg',
             'width': 1000,
@@ -261,7 +267,8 @@
         }, {
             'filename': '22.jpg',
             'width': 1000,
-            'height': 667
+            'height': 667,
+            'highlight': true 
         }, {
             'filename': '23.jpg',
             'width': 1000,
@@ -269,11 +276,11 @@
         }, {
             'filename': '24.jpg',
             'width': 1000,
-            'height': 1570
+            'height': 1500
         }, {
             'filename': '25.jpg',
             'width': 1000,
-            'height': 652
+            'height': 667
         }, {
             'filename': '26.jpg',
             'width': 1000,
@@ -281,7 +288,7 @@
         }, {
             'filename': '27.jpg',
             'width': 1000,
-            'height': 1498
+            'height': 1500
         }, {
             'filename': '28.jpg',
             'width': 1000,
@@ -289,15 +296,16 @@
         }, {
             'filename': '29.jpg',
             'width': 1000,
-            'height': 692
+            'height': 667
         }, {
             'filename': '30.jpg',
             'width': 1000,
-            'height': 713
+            'height': 667
         }, {
             'filename': '31.jpg',
             'width': 1000,
-            'height': 667
+            'height': 667,
+            'highlight': true 
         }, {
             'filename': '32.jpg',
             'width': 1000,
@@ -321,11 +329,12 @@
         }, {
             'filename': '38.jpg',
             'width': 1000,
-            'height': 638
+            'height': 667,
+            'highlight': true 
         }, {
             'filename': '40.jpg',
             'width': 1000,
-            'height': 636
+            'height': 667
         }, {
             'filename': '43.jpg',
             'width': 1000,
@@ -361,7 +370,8 @@
         }, {
             'filename': '54.jpg',
             'width': 1000,
-            'height': 667
+            'height': 667,
+            'highlight': true 
         }, {
             'filename': '57.jpg',
             'width': 1000,
@@ -369,7 +379,7 @@
         }, {
             'filename': '59.jpg',
             'width': 1000,
-            'height': 678
+            'height': 667
         }, {
             'filename': '60.jpg',
             'width': 1000,
@@ -385,7 +395,7 @@
         }, {
             'filename': '63.jpg',
             'width': 1000,
-            'height': 675
+            'height': 667
         }, {
             'filename': '64.jpg',
             'width': 1000,
@@ -397,7 +407,8 @@
         }, {
             'filename': '70.jpg',
             'width': 1000,
-            'height': 734
+            'height': 667,
+            'highlight': true 
         }, {
             'filename': '72.jpg',
             'width': 1000,
@@ -409,27 +420,29 @@
         }, {
             'filename': '75.jpg',
             'width': 1000,
-            'height': 667
+            'height': 667,
+            'highlight': true 
         }, {
             'filename': '76.jpg',
             'width': 1000,
-            'height': 1498
+            'height': 1500
         }, {
             'filename': '77.jpg',
             'width': 1000,
-            'height': 1498
+            'height': 1500
         }, {
             'filename': '78.jpg',
             'width': 1000,
-            'height': 1498
+            'height': 1500
         }, {
             'filename': '80.jpg',
             'width': 1000,
-            'height': 667
+            'height': 667,
+            'highlight': true 
         }, {
             'filename': '82.jpg',
             'width': 1000,
-            'height': 659
+            'height': 667
         }, {
             'filename': '84.jpg',
             'width': 1000,
@@ -437,7 +450,7 @@
         }, {
             'filename': '85.jpg',
             'width': 1000,
-            'height': 651
+            'height': 667
         }, {
             'filename': '86.jpg',
             'width': 1000,
@@ -445,15 +458,16 @@
         }, {
             'filename': '90.jpg',
             'width': 1000,
-            'height': 643
+            'height': 667
         }, {
             'filename': '94.jpg',
             'width': 1000,
-            'height': 707
+            'height': 667
         }, {
             'filename': '95.jpg',
             'width': 1000,
-            'height': 667
+            'height': 667,
+            'highlight': true 
         }, {
             'filename': '96.jpg',
             'width': 1000,
@@ -461,7 +475,8 @@
         }, {
             'filename': '100.jpg',
             'width': 1000,
-            'height': 667
+            'height': 667,
+            'highlight': true 
         }, {
             'filename': '103.jpg',
             'width': 1000,
@@ -469,7 +484,7 @@
         }, {
             'filename': '105.jpg',
             'width': 1000,
-            'height': 651
+            'height': 667
         }, {
             'filename': '106.jpg',
             'width': 1000,
@@ -497,15 +512,17 @@
         }, {
             'filename': '120.jpg',
             'width': 1000,
-            'height': 706
+            'height': 667
         }, {
             'filename': '122.jpg',
             'width': 1000,
-            'height': 667
+            'height': 667,
+            'highlight': true 
         }, {
             'filename': '125.jpg',
             'width': 1000,
-            'height': 650
+            'height': 667,
+            'highlight': true 
         }, {
             'filename': '126.jpg',
             'width': 1000,
@@ -513,7 +530,7 @@
         }, {
             'filename': '127.jpg',
             'width': 1000,
-            'height': 672
+            'height': 667
         }, {
             'filename': '129.jpg',
             'width': 1000,
@@ -521,7 +538,7 @@
         }, {
             'filename': '130.jpg',
             'width': 1000,
-            'height': 658
+            'height': 667
         }, {
             'filename': '132.jpg',
             'width': 1000,
@@ -529,7 +546,7 @@
         }, {
             'filename': '133.jpg',
             'width': 1000,
-            'height': 651
+            'height': 667
         }, {
             'filename': '134.jpg',
             'width': 1000,
@@ -537,11 +554,11 @@
         }, {
             'filename': '135.jpg',
             'width': 1000,
-            'height': 657
+            'height': 667
         }, {
             'filename': '137.jpg',
             'width': 1000,
-            'height': 650
+            'height': 667
         }, {
             'filename': '139.jpg',
             'width': 1000,
@@ -549,11 +566,13 @@
         }, {
             'filename': '142.jpg',
             'width': 1000,
-            'height': 667
+            'height': 667,
+            'highlight': true 
         }, {
             'filename': '143.jpg',
             'width': 1000,
-            'height': 667
+            'height': 667,
+            'highlight': true 
         }, {
             'filename': '144.jpg',
             'width': 1000,
@@ -561,7 +580,7 @@
         }, {
             'filename': '146.jpg',
             'width': 1000,
-            'height': 1530
+            'height': 1500
         }, {
             'filename': '147.jpg',
             'width': 1000,
@@ -573,7 +592,7 @@
         }, {
             'filename': '149.jpg',
             'width': 1000,
-            'height': 653
+            'height': 667
         }, {
             'filename': '150.jpg',
             'width': 1000,
@@ -581,7 +600,7 @@
         }, {
             'filename': '151.jpg',
             'width': 1000,
-            'height': 654
+            'height': 667
         }, {
             'filename': '154.jpg',
             'width': 1000,
@@ -601,7 +620,8 @@
         }, {
             'filename': '160.jpg',
             'width': 1000,
-            'height': 667
+            'height': 667,
+            'highlight': true 
         }, {
             'filename': '161.jpg',
             'width': 1000,
@@ -609,15 +629,15 @@
         }, {
             'filename': '162.jpg',
             'width': 1000,
-            'height': 639
+            'height': 667
         }, {
             'filename': '163.jpg',
             'width': 1000,
-            'height': 653
+            'height': 667
         }, {
             'filename': '164.jpg',
             'width': 1000,
-            'height': 652
+            'height': 667
         }, {
             'filename': '167.jpg',
             'width': 1000,
@@ -625,7 +645,7 @@
         }, {
             'filename': '168.jpg',
             'width': 1000,
-            'height': 645
+            'height': 667
         }, {
             'filename': '169.jpg',
             'width': 1000,
@@ -633,7 +653,8 @@
         }, {
             'filename': '170.jpg',
             'width': 1000,
-            'height': 667
+            'height': 667,
+            'highlight': true 
         }, {
             'filename': '171.jpg',
             'width': 1000,
@@ -645,7 +666,7 @@
         }, {
             'filename': '173.jpg',
             'width': 1000,
-            'height': 656
+            'height': 667
         }, {
             'filename': '175.jpg',
             'width': 1000,
@@ -661,7 +682,7 @@
         }, {
             'filename': '178.jpg',
             'width': 1000,
-            'height': 646
+            'height': 667
         }, {
             'filename': '179.jpg',
             'width': 1000,
@@ -673,7 +694,8 @@
         }, {
             'filename': '183.jpg',
             'width': 1000,
-            'height': 667
+            'height': 667,
+            'highlight': true 
         }, {
             'filename': '186.jpg',
             'width': 1000,
@@ -689,47 +711,49 @@
         }, {
             'filename': '189.jpg',
             'width': 1000,
-            'height': 648
+            'height': 667
         }, {
             'filename': '190.jpg',
             'width': 1000,
-            'height': 669
+            'height': 667
         }, {
             'filename': '191.jpg',
             'width': 1000,
-            'height': 653
+            'height': 667
         }, {
             'filename': '192.jpg',
             'width': 1000,
-            'height': 653
+            'height': 667,
+            'highlight': true 
         }, {
             'filename': '194.jpg',
             'width': 1000,
-            'height': 659
+            'height': 667
         }, {
             'filename': '195.jpg',
             'width': 1000,
-            'height': 745
+            'height': 667
         }, {
             'filename': '197.jpg',
             'width': 1000,
-            'height': 679
+            'height': 667
         }, {
             'filename': '199.jpg',
             'width': 1000,
-            'height': 705
+            'height': 667
         }, {
             'filename': '201.jpg',
             'width': 1000,
-            'height': 667
+            'height': 667,
+            'highlight': true 
         }, {
             'filename': '204.jpg',
             'width': 1000,
-            'height': 1498
+            'height': 1500
         }, {
             'filename': '205.jpg',
             'width': 1000,
-            'height': 653
+            'height': 667 
         }];
         var template = document.getElementById('image-container-template').innerHTML;
         var renderImages = Handlebars.compile(template);
