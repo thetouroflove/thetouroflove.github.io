@@ -74,7 +74,9 @@
         <nav>
             <ul>
                 <li>
-                    <a href="index.html">HOME</a>
+                    <a href="ourstory.html">
+                        OUR STORY
+                    </a>
                 </li>
                 <li>
                     <a href="proposal.html" class="active">
@@ -112,7 +114,6 @@
     </header>
     <!-- End Header -->
 
-
     <!-- Begin Content -->
     <div class="main-container with-padding">
 
@@ -121,6 +122,26 @@
 
             <!-- Begin Inner Wrapper -->
             <div class="inner-wrapper">
+
+                <div class="content-inner">
+
+                    <div class="divider" style="height:20px;"></div>
+
+                    <h2 class="title">PROPOSAL</h2>
+
+                    <div class="content">
+
+                        <p>Nullam molestie feugiat convallis. Etiam blandit nibh dolor, vel porta ante hendrerit
+                            nec. Nam dolor turpis,rutrum at dolor id, <a href="#">sollicitudin</a> deasxfegestas
+                            erat. Pellentesque lacinia velit quis vestibulum dictum. Sed congee mauris nec
+                            consequat. Suspendisse laoreet massa lacinia yyuuvdiam varius ullamcorper. Quisque
+                            rhoncus sest. Ut convallis vestibulum imperdiet.Lorem ipsum dolor sit amet, consectetur
+                        </p>
+
+                    </div>
+
+                    <div class="divider" style="height:20px;"></div>
+                </div>
 
                 <!-- Begin Gallery -->
                 <div class="gallery-images masonry style-icons high-space">
@@ -149,332 +170,333 @@
                     <div class="images clearfix cols-4" id="image-container-template">
 
                         {{#each images}}
-                            {{#if highlight}}
-                                <div class="img size-wide">
+                        {{#if highlight}}
+                        <div class="img size-wide">
                             {{else}}
-                                <div class="img size-regular">
-                            {{/if}}
-                            <div class="img-cont">
-                                <a href="images/proposal/photosToDisplay/{{filename}}" class="preview-3" rel="gallery">
-                                    <img class="lazy" data-original="images/proposal/photosToDisplay/{{filename}}"
-                                        alt="" data-width="{{width}}" data-height="{{height}}">
-                                </a>
+                            <div class="img size-regular">
+                                {{/if}}
+                                <div class="img-cont">
+                                    <a href="images/proposal/photosToDisplay/{{filename}}" class="preview-3"
+                                        rel="gallery">
+                                        <img class="lazy" data-original="images/proposal/photosToDisplay/{{filename}}"
+                                            alt="" data-width="{{width}}" data-height="{{height}}">
+                                    </a>
+                                </div>
                             </div>
+                            {{/each}}
+
                         </div>
-                        {{/each}}
 
                     </div>
+                    <!-- End Gallery -->
 
                 </div>
-                <!-- End Gallery -->
+                <!-- End Inner Wrapper -->
 
             </div>
-            <!-- End Inner Wrapper -->
+            <!-- End Wrapper -->
 
         </div>
-        <!-- End Wrapper -->
+        <!-- End Content -->
 
-    </div>
-    <!-- End Content -->
+        <!-- Begin JavaScript -->
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="js/migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="js/modernizr-respond.js"></script>
+        <script type="text/javascript" src="js/cookie.js"></script>
+        <script type="text/javascript" src="js/retina.js"></script>
+        <script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/scrollTo-min.js"></script>
+        <script type="text/javascript" src="js/easing.1.3.js"></script>
+        <script type="text/javascript" src="js/appear.js"></script>
+        <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+        <script type="text/javascript" src="js/jflickrfeed.min.js"></script>
+        <script type="text/javascript" src="js/flexslider/flexslider.min.js"></script>
+        <script type="text/javascript" src="js/isotope.min.js"></script>
+        <script type="text/javascript" src="js/queryloader2.min.js"></script>
+        <script type="text/javascript" src="js/gmap.min.js"></script>
+        <script type="text/javascript" src="js/nicescroll.min.js"></script>
+        <script type="text/javascript" src="js/fitvids.js"></script>
+        <script type="text/javascript" src="js/Magnific-Popup/magnific-popup.min.js"></script>
+        <script type="text/javascript" src="js/mb.YTPlayer/inc/mb.YTPlayer.js"></script>
+        <script type="text/javascript" src="js/mousewheel.min.js"></script>
+        <script type="text/javascript" src="js/lazyload.min.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
 
-    <!-- Begin JavaScript -->
-    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="js/migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="js/modernizr-respond.js"></script>
-    <script type="text/javascript" src="js/cookie.js"></script>
-    <script type="text/javascript" src="js/retina.js"></script>
-    <script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="js/scrollTo-min.js"></script>
-    <script type="text/javascript" src="js/easing.1.3.js"></script>
-    <script type="text/javascript" src="js/appear.js"></script>
-    <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
-    <script type="text/javascript" src="js/jflickrfeed.min.js"></script>
-    <script type="text/javascript" src="js/flexslider/flexslider.min.js"></script>
-    <script type="text/javascript" src="js/isotope.min.js"></script>
-    <script type="text/javascript" src="js/queryloader2.min.js"></script>
-    <script type="text/javascript" src="js/gmap.min.js"></script>
-    <script type="text/javascript" src="js/nicescroll.min.js"></script>
-    <script type="text/javascript" src="js/fitvids.js"></script>
-    <script type="text/javascript" src="js/Magnific-Popup/magnific-popup.min.js"></script>
-    <script type="text/javascript" src="js/mb.YTPlayer/inc/mb.YTPlayer.js"></script>
-    <script type="text/javascript" src="js/mousewheel.min.js"></script>
-    <script type="text/javascript" src="js/lazyload.min.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+        <script defer>
+            var myImages = [{
+                'filename': '000001.jpg',
+                'width': 1000,
+                'height': 667
+            }, {
+                'filename': '000002.jpg',
+                'width': 1000,
+                'height': 1500
+            }, {
+                'filename': '000003.jpg',
+                'width': 1000,
+                'height': 667
+            }, {
+                'filename': '000005.jpg',
+                'width': 1000,
+                'height': 667
+            }, {
+                'filename': '000007.jpg',
+                'width': 1000,
+                'height': 667
+            }, {
+                'filename': '000008.jpg',
+                'width': 1000,
+                'height': 1500
+            }, {
+                'filename': '000009.jpg',
+                'width': 1000,
+                'height': 1500
+            }, {
+                'filename': '000010.jpg',
+                'width': 1000,
+                'height': 667
+            }, {
+                'filename': '000011.jpg',
+                'width': 1000,
+                'height': 667
+            }, {
+                'filename': '000012.jpg',
+                'width': 1000,
+                'height': 667,
+                'highlight': true
+            }, {
+                'filename': '000013.jpg',
+                'width': 1000,
+                'height': 667
+            }, {
+                'filename': '000014.jpg',
+                'width': 1000,
+                'height': 667
+            }, {
+                'filename': '000016.jpg',
+                'width': 1000,
+                'height': 667
+            }, {
+                'filename': '000017.jpg',
+                'width': 1000,
+                'height': 667
+            }, {
+                'filename': '000019.jpg',
+                'width': 1000,
+                'height': 667
+            }, {
+                'filename': '000022.jpg',
+                'width': 1000,
+                'height': 1500
+            }, {
+                'filename': '000023.jpg',
+                'width': 1000,
+                'height': 1500
+            }, {
+                'filename': '000024.jpg',
+                'width': 1000,
+                'height': 1500
+            }, {
+                'filename': '000028.jpg',
+                'width': 1000,
+                'height': 667
+            }, {
+                'filename': '000025.jpg',
+                'width': 1000,
+                'height': 667,
+                'highlight': true
+            }, {
+                'filename': '000026.jpg',
+                'width': 1000,
+                'height': 1500
+            }, {
+                'filename': '000027.jpg',
+                'width': 1000,
+                'height': 667,
+                'highlight': true
+            }, {
+                'filename': '000029.jpg',
+                'width': 1000,
+                'height': 667
+            }, {
+                'filename': '000030.jpg',
+                'width': 1000,
+                'height': 667
+            }, {
+                'filename': '000031.jpg',
+                'width': 1000,
+                'height': 1500
+            }, {
+                'filename': '000034.jpg',
+                'width': 1000,
+                'height': 667,
+                'highlight': true,
+            }, {
+                'filename': '000035.jpg',
+                'width': 1000,
+                'height': 667
+            }, {
+                'filename': '000036.jpg',
+                'width': 1000,
+                'height': 667
+            }, {
+                'filename': '000037.jpg',
+                'width': 1000,
+                'height': 667
+            }, {
+                'filename': '000040.jpg',
+                'width': 1000,
+                'height': 667
+            }, {
+                'filename': '000041.jpg',
+                'width': 1000,
+                'height': 1500
+            }, {
+                'filename': '000042.jpg',
+                'width': 1000,
+                'height': 667
+            }, {
+                'filename': '000050.jpg',
+                'width': 1000,
+                'height': 667
+            }, {
+                'filename': '000043.jpg',
+                'width': 1000,
+                'height': 667
+            }, {
+                'filename': '000044.jpg',
+                'width': 1000,
+                'height': 1500
+            }, {
+                'filename': '000045.jpg',
+                'width': 1000,
+                'height': 667,
+                'highlight': true
+            }, {
+                'filename': '000046.jpg',
+                'width': 1000,
+                'height': 1500
+            }, {
+                'filename': '000047.jpg',
+                'width': 1000,
+                'height': 1500
+            }, {
+                'filename': '000048.jpg',
+                'width': 1000,
+                'height': 667
+            }, {
+                'filename': '000049.jpg',
+                'width': 1000,
+                'height': 667
+            }, {
+                'filename': '000068.jpg',
+                'width': 1000,
+                'height': 667
+            }, {
+                'filename': '000053.jpg',
+                'width': 1000,
+                'height': 667,
+                'highlight': true
+            }, {
+                'filename': '000057.jpg',
+                'width': 1000,
+                'height': 667,
+                'highlight': true
+            }, {
+                'filename': '000056.jpg',
+                'width': 1000,
+                'height': 667
+            }, {
+                'filename': '000060.jpg',
+                'width': 1000,
+                'height': 667
+            }, {
+                'filename': '000061.jpg',
+                'width': 1000,
+                'height': 1500
+            }, {
+                'filename': '000063.jpg',
+                'width': 1000,
+                'height': 667
+            }, {
+                'filename': '000064.jpg',
+                'width': 1000,
+                'height': 667
+            }, {
+                'filename': '000065.jpg',
+                'width': 1000,
+                'height': 1500
+            }, {
+                'filename': '000066.jpg',
+                'width': 1000,
+                'height': 1500
+            }, {
+                'filename': '000067.jpg',
+                'width': 1000,
+                'height': 667,
+                'highlight': true
+            }, {
+                'filename': '000069.jpg',
+                'width': 1000,
+                'height': 667
+            }, {
+                'filename': '000070.jpg',
+                'width': 1000,
+                'height': 667,
+                'highlight': true
+            }, {
+                'filename': '000071.jpg',
+                'width': 1000,
+                'height': 1500
+            }, {
+                'filename': '000072.jpg',
+                'width': 1000,
+                'height': 1500
+            }, {
+                'filename': '000074.jpg',
+                'width': 1000,
+                'height': 1500
+            }, {
+                'filename': '000077.jpg',
+                'width': 1000,
+                'height': 1500
+            }, {
+                'filename': '000078.jpg',
+                'width': 1000,
+                'height': 1500
+            }, {
+                'filename': '000080.jpg',
+                'width': 1000,
+                'height': 1500
+            }, {
+                'filename': '000082.jpg',
+                'width': 1000,
+                'height': 667
+            }, {
+                'filename': '000084.jpg',
+                'width': 1000,
+                'height': 1500
+            }, {
+                'filename': '000085.jpg',
+                'width': 1000,
+                'height': 1500
+            }, {
+                'filename': '000087.jpg',
+                'width': 1000,
+                'height': 667,
+                'highlight': true
+            }];
+            var template = document.getElementById('image-container-template').innerHTML;
+            var renderImages = Handlebars.compile(template);
 
-    <script defer>
-        var myImages = [{
-            'filename': '000001.jpg',
-            'width': 1000,
-            'height': 667
-        }, {
-            'filename': '000002.jpg',
-            'width': 1000,
-            'height': 1500
-        }, {
-            'filename': '000003.jpg',
-            'width': 1000,
-            'height': 667
-        }, {
-            'filename': '000005.jpg',
-            'width': 1000,
-            'height': 667
-        }, {
-            'filename': '000007.jpg',
-            'width': 1000,
-            'height': 667
-        }, {
-            'filename': '000008.jpg',
-            'width': 1000,
-            'height': 1500
-        }, {
-            'filename': '000009.jpg',
-            'width': 1000,
-            'height': 1500
-        }, {
-            'filename': '000010.jpg',
-            'width': 1000,
-            'height': 667
-        }, {
-            'filename': '000011.jpg',
-            'width': 1000,
-            'height': 667
-        }, {
-            'filename': '000012.jpg',
-            'width': 1000,
-            'height': 667,
-            'highlight': true
-        }, {
-            'filename': '000013.jpg',
-            'width': 1000,
-            'height': 667
-        }, {
-            'filename': '000014.jpg',
-            'width': 1000,
-            'height': 667
-        }, {
-            'filename': '000016.jpg',
-            'width': 1000,
-            'height': 667
-        }, {
-            'filename': '000017.jpg',
-            'width': 1000,
-            'height': 667
-        }, {
-            'filename': '000019.jpg',
-            'width': 1000,
-            'height': 667
-        }, {
-            'filename': '000022.jpg',
-            'width': 1000,
-            'height': 1500
-        }, {
-            'filename': '000023.jpg',
-            'width': 1000,
-            'height': 1500
-        }, {
-            'filename': '000024.jpg',
-            'width': 1000,
-            'height': 1500
-        }, {
-            'filename': '000028.jpg',
-            'width': 1000,
-            'height': 667
-        }, {
-            'filename': '000025.jpg',
-            'width': 1000,
-            'height': 667,
-            'highlight': true
-        }, {
-            'filename': '000026.jpg',
-            'width': 1000,
-            'height': 1500
-        }, {
-            'filename': '000027.jpg',
-            'width': 1000,
-            'height': 667,
-            'highlight': true
-        }, {
-            'filename': '000029.jpg',
-            'width': 1000,
-            'height': 667
-        }, {
-            'filename': '000030.jpg',
-            'width': 1000,
-            'height': 667
-        }, {
-            'filename': '000031.jpg',
-            'width': 1000,
-            'height': 1500
-        }, {
-            'filename': '000034.jpg',
-            'width': 1000,
-            'height': 667,
-            'highlight': true,
-        }, {
-            'filename': '000035.jpg',
-            'width': 1000,
-            'height': 667
-        }, {
-            'filename': '000036.jpg',
-            'width': 1000,
-            'height': 667
-        }, {
-            'filename': '000037.jpg',
-            'width': 1000,
-            'height': 667
-        }, {
-            'filename': '000040.jpg',
-            'width': 1000,
-            'height': 667
-        }, {
-            'filename': '000041.jpg',
-            'width': 1000,
-            'height': 1500
-        }, {
-            'filename': '000042.jpg',
-            'width': 1000,
-            'height': 667
-        }, {
-            'filename': '000050.jpg',
-            'width': 1000,
-            'height': 667
-        }, {
-            'filename': '000043.jpg',
-            'width': 1000,
-            'height': 667
-        }, {
-            'filename': '000044.jpg',
-            'width': 1000,
-            'height': 1500
-        }, {
-            'filename': '000045.jpg',
-            'width': 1000,
-            'height': 667,
-            'highlight': true
-        }, {
-            'filename': '000046.jpg',
-            'width': 1000,
-            'height': 1500
-        }, {
-            'filename': '000047.jpg',
-            'width': 1000,
-            'height': 1500
-        }, {
-            'filename': '000048.jpg',
-            'width': 1000,
-            'height': 667
-        }, {
-            'filename': '000049.jpg',
-            'width': 1000,
-            'height': 667
-        }, {
-            'filename': '000068.jpg',
-            'width': 1000,
-            'height': 667
-        }, {
-            'filename': '000053.jpg',
-            'width': 1000,
-            'height': 667,
-            'highlight': true
-        }, {
-            'filename': '000057.jpg',
-            'width': 1000,
-            'height': 667,
-            'highlight': true
-        }, {
-            'filename': '000056.jpg',
-            'width': 1000,
-            'height': 667
-        }, {
-            'filename': '000060.jpg',
-            'width': 1000,
-            'height': 667
-        }, {
-            'filename': '000061.jpg',
-            'width': 1000,
-            'height': 1500
-        }, {
-            'filename': '000063.jpg',
-            'width': 1000,
-            'height': 667
-        }, {
-            'filename': '000064.jpg',
-            'width': 1000,
-            'height': 667
-        }, {
-            'filename': '000065.jpg',
-            'width': 1000,
-            'height': 1500
-        }, {
-            'filename': '000066.jpg',
-            'width': 1000,
-            'height': 1500
-        }, {
-            'filename': '000067.jpg',
-            'width': 1000,
-            'height': 667,
-            'highlight': true
-        }, {
-            'filename': '000069.jpg',
-            'width': 1000,
-            'height': 667
-        }, {
-            'filename': '000070.jpg',
-            'width': 1000,
-            'height': 667,
-            'highlight': true
-        }, {
-            'filename': '000071.jpg',
-            'width': 1000,
-            'height': 1500
-        }, {
-            'filename': '000072.jpg',
-            'width': 1000,
-            'height': 1500
-        }, {
-            'filename': '000074.jpg',
-            'width': 1000,
-            'height': 1500
-        }, {
-            'filename': '000077.jpg',
-            'width': 1000,
-            'height': 1500
-        }, {
-            'filename': '000078.jpg',
-            'width': 1000,
-            'height': 1500
-        }, {
-            'filename': '000080.jpg',
-            'width': 1000,
-            'height': 1500
-        }, {
-            'filename': '000082.jpg',
-            'width': 1000,
-            'height': 667
-        }, {
-            'filename': '000084.jpg',
-            'width': 1000,
-            'height': 1500
-        }, {
-            'filename': '000085.jpg',
-            'width': 1000,
-            'height': 1500
-        }, {
-            'filename': '000087.jpg',
-            'width': 1000,
-            'height': 667,
-            'highlight': true
-        }];
-        var template = document.getElementById('image-container-template').innerHTML;
-        var renderImages = Handlebars.compile(template);
-
-        document.getElementById('image-container-template').innerHTML = renderImages({
-            images: myImages
-        });
-    </script>
-    <!-- End JavaScript -->
+            document.getElementById('image-container-template').innerHTML = renderImages({
+                images: myImages
+            });
+        </script>
+        <!-- End JavaScript -->
 
 
 </body>
