@@ -4,7 +4,7 @@
 # Author: Mike
 
 # absolute path to image folder
-FOLDER="/home/surya/Wedding/Uno/images/proposal/photosToDisplay"
+FOLDER="/home/surya/Wedding/thetouroflove.github.io/images/atlanta/aashirwad"
 
 # max height
 WIDTH=1000
