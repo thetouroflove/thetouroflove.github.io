@@ -4,7 +4,7 @@
 # Author: Mike
 
 # absolute path to image folder
-FOLDER="/home/surya/Wedding/thetouroflove.github.io/images/atlanta/aashirwad"
+FOLDER="/home/surya/Wedding/thetouroflove.github.io/images/ourstory/"
 
 # max height
 WIDTH=1000
@@ -20,3 +20,5 @@ HEIGHT=1000
 
 #resize jpg only to either height or width, keeps proportions using imagemagick
 find ${FOLDER} -iname '*.jpg' -exec convert \{} -verbose -resize $WIDTHx$HEIGHT\> \{} \;
+
+find ${FOLDER} -iname '*.jpeg' -exec convert \{} -verbose -resize $WIDTHx$HEIGHT\> \{} \;
